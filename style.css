@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color:rgb(39, 34, 34);
+    color:white;
+    text-align: center;
+}
+.app-header{
+    background-color: rgba(0, 0, 255, 0.459);
+    padding:5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app-main{
+    padding: 20px;
+}
+.app-footer{
+    background-color: blue;
+    padding:10px;
+    position: fixed;
+    bottom:0;
+    right:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width:50px;
+    border-radius:50%;
+}
+
+
+
+
+
+
+
+
+
+/*imported    */
+.title{
+    margin-left: 10px;
+    text-transform:uppercase;
+}#menu{
+    margin-right: 10px;
+    font-size:30px;
+    cursor: pointer;
+}.side-menu{
+    background-color:rgb(12, 3, 36) ;
+    border:1px solid rgba(91, 90, 92, 0.63);
+    padding:24px;
+    border-radius:0 0 0 20px;
+    width:250px;
+}
+.overlay{
+        background-color: rgba(12, 3, 36, 0.507);
+    }
+
+.lists{
+    list-style: none;
+    padding:10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.lists:hover{
+    background-color: rgba(128, 0, 128, 0.192);
+}
+.side-header{
+    display: flex;
+    align-items: center;
+    font-size:20px;
+    justify-content: space-between;
+}
+#searchBox{
+    background-color:rgba(0, 0, 255, 0.219);
+}
+.image-item{
+    width: 150px;
+    border-radius:5px 5px 0 0;
+}
+.new-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    flex-grow: 1;
+    border-radius:5px;
+    margin:1px;
+    max-width: 200px;
+    
+    text-align: center;
+    .item-name{
+        max-width:150px;
+    }
+    .item-btns{
+        margin:4px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .buy-btn{
+        background:transparent;
+        border:0;
+        color:grey;
+        padding:5px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .cart-btn{
+        border:0;
+        border-radius:5px;
+        padding:5px;
+        background-color:transparent;
+        color:grey;
+        cursor: pointer;
+    }
+}
+
+.material-icons{
+    cursor: pointer;
+}
+.accordion{
+    display: block;
+    padding:10px;
+    border-radius:10px;
+    border-bottom: 1px solid grey;
+    color:white;
+    background-color: rgba(128, 0, 128, 0.192);
+}
+.accordion-content{
+    padding:10px;
+    border:1px solid rgba(128, 0, 128, 0.192);
+    background-color: rgb(12, 3, 36);
+    border-radius:10px;
+    display: none;
+    margin-top:5px;
+}
+input:checked~.accordion-content{
+    display: block;
+}
+.accordion:last-child>label,.accordion:last-child>.accordion-content{
+    border:0;
+}
+input[type='radio']{
+    display: none;
+}
+.lines{
+    text-transform: capitalize;
+    cursor: pointer;
+    list-style: none;
+    border:0;
+    border-top:1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 15px;
+}
+.lines:hover{
+    background-color: rgba(128, 0, 128, 0.192);
+}
+.themes{
+    padding:10px;
+    background-color: rgba(0, 0, 255, 0.219);
+    border-radius:10px;
+}
+.theme-shell{
+    padding:10px;
+    background-color:rgba(128, 0, 128, 0.192);
+    border-radius:10px;
+    margin:5px;
+    border:0;
+    color: white;
+    box-shadow: 0 3px 5px black;
+}

@@ -1,2 +1,3 @@
-# application
-first app
+{
+    'hello user!'
+}
